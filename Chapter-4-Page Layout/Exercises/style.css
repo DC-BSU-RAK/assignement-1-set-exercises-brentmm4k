@@ -1,0 +1,83 @@
+body{
+    font-family: Arial;
+    margin: 0px;
+    text-align: justify;
+    justify-content: center;
+}
+header{
+    font-family: Tahoma;
+    font-size: 50px;
+    text-align: center;
+    background-color: #17072b;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+main{
+    color: #000000;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.contents{
+    display: flex;                
+    flex-direction: row ;
+}
+.Welcome{
+    flex: 1;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.Sidebar{
+    width: 500px;
+    background-color: #172d67;
+    color: #FFFFFF;
+    padding: 25px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+footer{
+    background-color: #8c15e9;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.Sidebar img{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.navbar ul{  /* Navbar design from "https://www.youtube.com/watch?v=f3uCSh6LIY0"*/
+    list-style-type: none;
+    font-size: 30px;
+    background-color: #17072b;
+    padding: 0px;
+    margin: 0px;
+    display: flex;             
+    justify-content: center;        /* Justifies navbar to the center */
+    align-items: center;            /* Centers items vertically */
+    position: relative;             /* Positioning is relative for pseudo-elements */  
+    overflow: hidden;   
+}
+.navbar a{
+    color: white;
+    text-decoration: none;                                       /* Removes the hyperlink underline and decoration */
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: #6c469c;
+}
+.navbar li{
+    float: left;
+}
