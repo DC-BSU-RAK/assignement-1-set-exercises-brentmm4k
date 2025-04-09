@@ -1,0 +1,81 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-hollow');
+@import url('https://fonts.googleapis.com/css?family=Pixelify Sans'); /* Imports the URL for two external font families*/
+body {
+    margin: 0px;
+    background: hsl(41, 62%, 91%);
+}
+main {
+    margin-left: 120px;
+    margin-right: 120px;
+    font-size: 160%;
+    font-family: 'Pixelify Sans';
+    text-align: justify;
+}
+h1{ /*This block is focused on the text of h1*/
+    position: relative;
+    text-align: center;
+    color: gold;
+    font-family: 'Pokemon Hollow', sans-serif;
+    font-size: 300%;
+    margin: 0px;
+    padding: 20px;
+}
+h1::before{ /* This block is a pseudo-element, this particular pseudo-element is responsible for adding the background image*/
+    content: "";            /* Required for pseudo-elements */
+    position: absolute;     /* For absolute positioning */
+    top: 0;                 /* Used to determine how far the image is from the 4 sides of the web page*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/background.png'); /* Adds background image */
+    background-size: cover;                         /* Cover the entire area */
+    background-repeat: no-repeat;                   /* Makes sure the image isn't repeated */
+    background-position: center;                    /* Centers the image */
+    z-index: -1;                                    /* Place it behind the text */
+}
+h1::after{  /* This block is also a pseudo-element, this pseudo-element however, is responsible for dimming the background image for a more visible header*/
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with half opacity */
+    z-index: -1;                            /* Place the image behind the text */
+}
+footer{
+    text-decoration: none;
+    margin: 0px;
+    font-size: 130%;
+    font-family: 'Times New Roman';
+    background: hsl(41, 65%, 62%);
+    padding: 35px;
+    text-align: left;
+}
+.navbar ul{  /* Navbar design from "https://www.youtube.com/watch?v=f3uCSh6LIY0"*/
+    list-style-type: none;
+    font-family: 'Pixelify Sans';
+    background-color: hsl(40, 2%, 77%);
+    padding: 0px;
+    margin: 0px;
+    display: flex;             
+    justify-content: center;        /* Justifies navbar to the center */
+    align-items: center;            /* Centers items vertically */
+    position: relative;             /* Positioning is relative for pseudo-elements */  
+    overflow: hidden;   
+}
+.navbar a{
+    color: white;
+    text-decoration: none;                                       /* Removes the hyperlink underline and decoration */
+    padding: 15px;
+    display: block;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Adds transition for smooth effect when being hovered */
+}
+.navbar a:hover{
+    transform: scale(1.1);                  /* Scales up the link when being hovered */
+    background-color:hsl(40, 1%, 89%);
+}
+.navbar li{
+    float: left;
+}
