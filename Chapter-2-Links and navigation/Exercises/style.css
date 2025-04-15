@@ -52,7 +52,7 @@ footer{
     padding: 35px;
     text-align: left;
 }
-.navbar ul{  /* Navbar design from "https://www.youtube.com/watch?v=f3uCSh6LIY0"*/
+.navbar ul{ 
     list-style-type: none;
     font-family: 'Pixelify Sans';
     background-color: hsl(40, 2%, 77%);
